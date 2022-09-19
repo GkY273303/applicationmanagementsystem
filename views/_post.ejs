@@ -1,0 +1,15 @@
+<section id="feed-posts">
+  <%if(locals.student){%>
+  <h4>Post</h4>
+
+  <form action="/post/create" id="new-post-form" method="POST">
+    <input type="text" name="branch" placeholder="enter branch" />
+    <input type="text" name="subject" placeholder="enter subject" />
+    <input type="text" name="year" placeholder="enter you year" />
+    <input type="text" name="teacher" placeholder="enter teacher name" />
+    <textarea name="content" rows="3" cols="30" placeholder="type massage">
+    </textarea>
+    <input type="submit" value="post" />
+  </form>
+  <%}%>
+</section>
